@@ -184,7 +184,7 @@ nav.nav-bar-mobile > ul {
 
 .conteudo div > h1 {
     padding: 150px 0;
-    font-size: 6em;
+    font-size: 5em;
 }
 
 .conteudo div > p {
@@ -247,6 +247,14 @@ nav.nav-bar-mobile > ul {
 
     .conteudo {
         padding: 10px 0 0 0;
+    }
+
+    .conteudo div > h1 {
+        font-size: 3em;
+    }
+
+    .conteudo div > p {
+        font-size: 1em;
     }
 
     .menu-mobile-button {
