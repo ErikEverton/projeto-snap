@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snap</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="limitar-largura">
+        <img class="logo-mobile" src="images/logo.svg" alt="">
+        <nav class="nav-bar">
+            <img src="images/logo.svg" alt="Logo">
+
+            <ul class="nav-list">
+                <li class="menu-button">
+                    <button onclick="abirMenuFeaturesPc()">Features <img id="img-arrow-features" src="images/icon-arrow-down.svg" alt=""></button>
+
+                    <div id="menu-features" class="menu-features">
+                        <ul>
+                            <li><img src="images/icon-todo.svg" alt=""> Todo List</li>
+                            <li><img src="images/icon-calendar.svg" alt=""> Calendar</li>
+                            <li><img src="images/icon-reminders.svg" alt=""> Reminders</li>
+                            <li><img src="images/icon-planning.svg" alt=""> Planning</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu-button">
+                    <button onclick="abrirMenuCompanyPc()">Company <img id="img-arrow-company" src="images/icon-arrow-down.svg" alt=""></button>
+                    <div id="menu-company" class="menu-company">
+                        <ul>
+                            <li>History</li>
+                            <li>Our team</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><button>Carrers</button></li>
+                <li><button>About</button></li>
+            </ul>
+        </nav>
+
+        <div class="buttons">
+            <button>Login</button>
+            <button class="register">Register</button>
+        </div>
+
+        <div class="menu-mobile-button">
+            <img onclick="abrirMenuMobile()" id="imagem-menu-mobile" src="images/icon-menu.svg" alt="">
+        </div>
+        </div>
+    </header>
+
+    <div id="menu-mobile" class="menu-mobile">
+        <nav class="nav-bar-mobile">
+            <ul>
+                <li>
+                    <button onclick="abrirMenuFeaturesMobile()">Features <img id="imagem-arrow-features-mobile" src="images/icon-arrow-down.svg" alt=""></button>
+
+                    <div id="menu-features-mobile" class="menu-features-mobile">
+                        <ul>
+                            <li><img src="images/icon-todo.svg" alt=""> Todo List</li>
+                            <li><img src="images/icon-calendar.svg" alt=""> Calendar</li>
+                            <li><img src="images/icon-reminders.svg" alt=""> Reminders</li>
+                            <li><img src="images/icon-planning.svg" alt=""> Planning</li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li>
+                    <button onclick="abrirMenuCompanyMobile()">Company <img id="imagem-arrow-company-mobile" src="images/icon-arrow-down.svg" alt=""></button>
+                
+                    <div id="menu-company-mobile" class="menu-company-mobile">
+                        <ul>
+                            <li>History</li>
+                            <li>Our team</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li>Careers</li>
+                <li>About</li>
+            </ul>
+
+
+        </nav>
+
+        <div class="buttons-mobile">
+            <button class="login-button">Login</button>
+            <button class="register-button">Register</button>
+        </div>
+    </div>
+
+    <main class="limitar-largura">
+        <section class="conteudo">
+            <div>
+                <h1>Make <br> remote work</h1>
+                <p>
+                    Get your team in sync, no matter your location. <br>
+                    Streamline process, create team rituals, and <br>
+                    Watch productive soar.
+                </p>
+
+                <button>Learn more</button>
+
+                <div class="images">
+                    <img src="images/client-databiz.svg" alt="">
+                    <img src="images/client-audiophile.svg" alt="">
+                    <img src="images/client-meet.svg" alt="">
+                    <img src="images/client-maker.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/image-hero-desktop.png">
+                    <img class="img-hero" src="images/image-hero-mobile.png" alt="">
+                </picture>
+            </div>
+        </section>
+    </main>
+
+    <div class="attribuation">
+        Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>.
+        Coded by Erik.
+    </div>
+
+    <script>
+
+        function abirMenuFeaturesPc() {
+            let imgArrowFeatures = document.getElementById("img-arrow-features")
+            
+            if (imgArrowFeatures.getAttribute("src") !== "images/icon-arrow-down.svg") {
+                imgArrowFeatures.src = "images/icon-arrow-down.svg"
+            } else {
+                imgArrowFeatures.src = "images/icon-arrow-up.svg"
+            }
+
+            let menuFeatues = document.getElementById("menu-features")
+            menuFeatues.classList.toggle("active")
+
+        }
+
+        function abrirMenuCompanyPc() {
+            let imgArrowCompany = document.getElementById("img-arrow-company")
+
+            if (imgArrowCompany.getAttribute("src") !== "images/icon-arrow-down.svg") {
+                imgArrowCompany.src = "images/icon-arrow-down.svg"
+            } else {
+                imgArrowCompany.src = "images/icon-arrow-up.svg"
+            }
+
+            let menuCompany = document.getElementById("menu-company")
+            menuCompany.classList.toggle("active")
+        }
+
+        function abrirMenuMobile() {
+            let imagemHamburguer = document.getElementById("imagem-menu-mobile");
+            let menuMobile = document.getElementById("menu-mobile")
+
+            if (imagemHamburguer.getAttribute("src") !== "images/icon-menu.svg") {
+                imagemHamburguer.src = "images/icon-menu.svg";
+            } else {
+                imagemHamburguer.src = "images/icon-close-menu.svg"
+            }
+
+            menuMobile.classList.toggle("active");
+
+        }
+
+        function abrirMenuFeaturesMobile() {
+            let imagemArrowFeaturesMobile = document.getElementById("imagem-arrow-features-mobile");
+            let menuFeaturesMobile = document.getElementById("menu-features-mobile")
+
+            if (imagemArrowFeaturesMobile.getAttribute("src") !== "images/icon-arrow-down.svg") {
+                imagemArrowFeaturesMobile.src = "images/icon-arrow-down.svg";
+            } else {
+                imagemArrowFeaturesMobile.src = "images/icon-arrow-up.svg";
+            }
+
+            menuFeaturesMobile.classList.toggle("active")
+        }
+
+        function abrirMenuCompanyMobile() {
+            let imagemArrowCompanyMobile = document.getElementById("imagem-arrow-company-mobile");
+            let menuCompanyMobile = document.getElementById("menu-company-mobile");
+
+            if (imagemArrowCompanyMobile.getAttribute("src") !== "images/icon-arrow-down.svg") {
+                imagemArrowCompanyMobile.src = "images/icon-arrow-down.svg";
+            } else {
+                menuCompanyMobile.src = "images/icon-arrow-up.svg"
+            }
+
+            menuCompanyMobile.classList.toggle("active");
+        }
+
+    </script>
+</body>

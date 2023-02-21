@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: #fff;
+}
+
+.limitar-largura {
+    max-width: 1624px;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-bar .nav-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-bar ul li button {
+    padding: 5px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.nav-bar ul li button {
+    border: none;
+}
+
+.menu-button {
+    position: relative
+}
+
+.menu-features, .menu-company {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #00000032;
+}
+
+.menu-features {
+    left: -70px;
+}
+
+.menu-company {
+    width: 70px;
+}
+
+
+.menu-features ul, .menu-company ul {
+    list-style: none;
+}
+
+.menu-features ul li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-align: right;
+}
+
+.menu-company ul li, .menu-features ul li {
+    margin: 15px 0;
+}
+
+.buttons {
+    margin-right: 10px;
+}
+
+.buttons button {
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.menu-mobile-button {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    width: 50vw;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+nav.nav-bar-mobile > ul {
+    list-style: none;
+    padding: 10px 0 0 20px;
+    font-size: 1.3em;
+}
+
+.nav-bar-mobile ul li {
+    padding: 20px 0;
+}
+
+.nav-bar-mobile ul li button {
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-features-mobile {
+    display: none;
+}
+
+.menu-features-mobile ul {
+    list-style: none;
+}
+
+.menu-features-mobile ul li {
+    padding: 10px 0 0 30px;
+}
+
+.menu-company-mobile {
+    display: none;
+}
+
+.menu-company-mobile ul {
+    list-style: none;
+}
+
+.menu-company-mobile ul li {
+    padding: 10px 0 0 30px;
+}
+
+.buttons-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.buttons-mobile .login-button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.buttons-mobile .register-button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.conteudo {
+    padding: 50px;
+    display: flex;
+    gap: 100px;
+}
+
+.conteudo div > h1 {
+    padding: 150px 0;
+    font-size: 6em;
+}
+
+.conteudo div > p {
+    font-size: 1.5em;
+    padding-bottom: 100px;
+}
+
+.conteudo div > button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: auto;
+    display: block;
+}
+
+.images {
+    padding: 100px 0;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.attribuation {
+    padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    .conteudo {
+        flex-direction: column-reverse;
+    }
+
+    picture {
+        width: 100vw;
+    }
+
+    .img-hero {
+        width: 100%;
+    }
+
+    .conteudo div > h1 {
+        padding: 50px 0;
+    }
+
+    .conteudo div > p {
+        padding-bottom: 50px;
+    }
+
+    .images {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .conteudo {
+        padding: 10px 0 0 0;
+    }
+
+    .menu-mobile-button {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .buttons {
+        display: none;
+    }
+}
+
+.active {
+    display: block;
+}
