@@ -208,6 +208,10 @@ nav.nav-bar-mobile > ul {
     flex-wrap: wrap;
 }
 
+.img-hero-pc {
+    width: 100%;
+}
+
 .attribuation {
     padding: 20px;
     text-align: center;
