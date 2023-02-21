@@ -204,7 +204,7 @@ nav.nav-bar-mobile > ul {
 .images {
     padding: 100px 0;
     display: flex;
-    gap: 40px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
