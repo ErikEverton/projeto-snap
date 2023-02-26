@@ -217,7 +217,7 @@ nav.nav-bar-mobile > ul {
     text-align: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
     .conteudo {
         flex-direction: column-reverse;
     }
